@@ -1,0 +1,32 @@
+{
+  "appName": "inKino",
+  "@appName": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "nowInTheaters": "Ohjelmistossa",
+  "@nowInTheaters": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "showtimes": "Näytösajat",
+  "@showtimes": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "comingSoon": "Tulossa",
+  "@comingSoon": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "oops": "Oho!",
+  "@oops": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "loadingMoviesError": "Ongelma elokuvien latauksessa.",
+  "@loadingMoviesError": {
+    "type": "text",
+    "placeholders": {}
+  }
+}
