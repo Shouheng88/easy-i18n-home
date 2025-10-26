@@ -1,10 +1,5 @@
 {
   "@@last_modified": "2018-11-03T15:02:36.546976",
-  "appName": "inKino",
-  "@appName": {
-    "type": "text",
-    "placeholders": {}
-  },
   "nowInTheaters": "Now in theaters",
   "@nowInTheaters": {
     "type": "text",
@@ -15,7 +10,7 @@
     "type": "text",
     "placeholders": {}
   },
-  "comingSoon": "Coming soon",
+  "comingSoon": "The Film's Coming soon",
   "@comingSoon": {
     "type": "text",
     "placeholders": {}
@@ -25,7 +20,7 @@
     "type": "text",
     "placeholders": {}
   },
-  "loadingMoviesError": "There was an error while\nloading movies.",
+  "loadingMoviesError": "There was an error while\nloading the movie \"GodFather\":",
   "@loadingMoviesError": {
     "type": "text",
     "placeholders": {}
