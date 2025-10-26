@@ -24,5 +24,9 @@
   "@loadingMoviesError": {
     "type": "text",
     "placeholders": {}
+  },
+  "errorDesc": "The error of \"%s\" is: %s",
+  "@errorDesc": {
+    
   }
 }
