@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="compose_note_saved_to">Note saved!\n\"%s\"</string>
+    <string name="compose_default_note_name">Untitled</string>
+    <string name="compose_title_hint">Input the note\'s title</string>
+    <string name="compose_content_hint">Input something here &#8230;</string>
+    <string name="sort_divider_hidden_tip"><![CDATA[Invisible <small>(Drag below to hide)</small>]]></string>
+    <string name="set_language_english" translatable="false">English</string>
+    <string name="rich_text" translatable="false">
+        This is <b>bold</b>, <i>italic</i>, and <u>underlined</u> text.
+        Visit our <a href="https://example.com">website</a> for more info.
+    </string>
+    <string name="price">Total: $%.2f</string> <!-- 保留2位小数 -->
+        <plurals name="item_count">
+        <item quantity="zero">You have no items.</item>
+        <item quantity="one">You have 1 item.</item>
+        <item quantity="other">You have %d items.</item>
+    </plurals>
+       <string-array name="menu_items">
+        <item>Search</item>
+        <item>Settings</item>
+        <item>Exit</item>
+    </string-array>
+</resources>
