@@ -1,3 +1,4 @@
 app_info_privacy_policy = "Privacy Policy";
 app_info_desc = "%@ is a professional, secure and beautiful password and privacy management software";
 app_info_open_algorithm = "Open Source Encryption Algorithm";
+moive_info = "The description of the film \"%s\":";
