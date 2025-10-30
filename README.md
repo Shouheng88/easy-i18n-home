@@ -10,6 +10,8 @@
 
 ## 功能
 
+- 加载和展示多语言词条，直观展示，快捷操作
+- 支持删除、修改词条，并回写到多语言文件
 - 支持多种翻译模式：Google、DeepL、Tencent、Baidu、Libre 等
 - 支持 AI 翻译，允许添加备注信息以使翻译更加准确
 - 支持多种开发平台：Android、iOS、Flutter、Compose 以及 Java 等
