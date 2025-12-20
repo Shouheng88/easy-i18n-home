@@ -1,12 +1,12 @@
 # Easy I18n
 
-<img src="res/icon_256x256.png" width=150>
+<img src="../res/icon_256x256.png" width=150>
 
 **開發過程多語言詞條管理工具**
 
-![](res/Screenshot%202025-10-30%20at%2013.16.29.png)
+![](../res/Screenshot%202025-10-30%20at%2013.16.29.png)
 
-![](res/Screenshot%202025-10-30%20at%2013.16.18.png)
+![](../res/Screenshot%202025-10-30%20at%2013.16.18.png)
 
 ## 功能
 
