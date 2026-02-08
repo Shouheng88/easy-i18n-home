@@ -31,8 +31,8 @@ jobs:
 
       - name: Build app
         run: |
-          chmod +x gradlew
           cd source
+          chmod +x gradlew       
           ./gradlew packageReleaseDistributionForCurrentOS -Pbuild_version="1.0.3"
 
       - name: Upload build artifact
