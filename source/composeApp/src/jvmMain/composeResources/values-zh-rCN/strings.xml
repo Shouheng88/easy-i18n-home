@@ -1,0 +1,381 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Easy I18n</string>
+    <string name="language">zh_CN</string>
+    <string name="text_seconds">秒</string>
+    <string name="text_minutes">分钟</string>
+    <string name="text_hours">小时</string>
+    <string name="text_days">天</string>
+    <string name="text_to_set">去设置</string>
+    <string name="text_cancel">取消</string>
+    <string name="text_save">保存</string>
+    <string name="text_sure">确定</string>
+    <string name="text_done">完成</string>
+    <string name="text_send">发送</string>
+    <string name="text_sending">发送中 &#8230;</string>
+    <string name="text_succeed">成功</string>
+    <string name="text_failed">失败</string>
+    <string name="text_copied">已复制</string>
+    <string name="text_back">返回</string>
+    <string name="text_tips">提示</string>
+    <string name="text_update_succeed">更新成功！</string>
+    <string name="text_save_succeed">保存成功！</string>
+    <string name="text_save_failed_with">保存失败: %1$s</string>
+    <string name="text_configured">已配置</string>
+    <string name="text_not_configured">未配置</string>
+    <string name="text_add">新增</string>
+    <string name="text_begin">开始</string>
+    <string name="text_got_it">知道了</string>
+    <string name="text_clear">清空</string>
+    <string name="text_or">或者</string>
+    <string name="text_document">文档</string>
+    <string name="text_loading">正在加载 &#8230;</string>
+    <string name="text_unlimited">不限量</string>
+    <string name="tab_i18n_name">多语言管理</string>
+    <string name="tab_setting_name">设置</string>
+    <string name="tab_info_name">信息</string>
+    <string name="tab_premium_name">会员中心</string>
+    <string name="set_ai_provider_open_ai">OpenAI</string>
+    <string name="set_ai_provider_qianwen">通义千问</string>
+    <string name="set_ai_provider_deepseek">DeepSeek</string>
+    <string name="set_ai_provider_anthropic">Anthropic</string>
+    <string name="set_ai_provider_zhipu">智谱</string>
+    <string name="set_ai_provider_grok">Grok</string>
+    <string name="set_ai_provider_gemini">Gemini</string>
+    <string name="set_ai_provider_custom">自定义</string>
+    <string name="translator_name_google">谷歌翻译</string>
+    <string name="translator_name_baidu">百度翻译</string>
+    <string name="translator_name_deepl">DeepL 翻译</string>
+    <string name="translator_name_libre">Libre 翻译</string>
+    <string name="translator_name_tencent">腾讯翻译</string>
+    <string name="translator_name_ai">使用 AI 翻译</string>
+    <string name="language_default">默认</string>
+    <string name="language_unknown">未知</string>
+    <string name="language_zh">中文</string>
+    <string name="language_cht">繁体中文</string>
+    <string name="language_jp">日语</string>
+    <string name="language_yue">粤语</string>
+    <string name="language_en">英语</string>
+    <string name="language_ko">韩语</string>
+    <string name="language_th">泰语</string>
+    <string name="language_pt">葡萄牙语</string>
+    <string name="language_pt_br">葡萄牙语（巴西）</string>
+    <string name="language_el">希腊语</string>
+    <string name="language_bg">保加利亚语</string>
+    <string name="language_fi">芬兰语</string>
+    <string name="language_sl">斯洛文尼亚语</string>
+    <string name="language_fr">法语</string>
+    <string name="language_fr_fr">法语（法国）</string>
+    <string name="language_fr_ca">法语（加拿大）</string>
+    <string name="language_ar">阿拉伯语</string>
+    <string name="language_de">德语</string>
+    <string name="language_nl">荷兰语</string>
+    <string name="language_et">爱沙尼亚语</string>
+    <string name="language_cs">捷克语</string>
+    <string name="language_sv">瑞典语</string>
+    <string name="language_vi">越南语</string>
+    <string name="language_es">西班牙语</string>
+    <string name="language_ru">俄语</string>
+    <string name="language_it">意大利语</string>
+    <string name="language_pl">波兰语</string>
+    <string name="language_da">丹麦语</string>
+    <string name="language_ro">罗马尼亚语</string>
+    <string name="language_hu">匈牙利语</string>
+    <string name="language_no">挪威语</string>
+    <string name="language_tr">土耳其语</string>
+    <string name="language_hi">印地语</string>
+    <string name="language_in">印度尼西亚语</string>
+    <string name="language_uk">乌克兰语</string>
+    <string name="language_bn">孟加拉语</string>
+    <string name="table_column_name_no">编号</string>
+    <string name="table_column_name_word">词条</string>
+    <string name="table_column_name_rate">翻译比</string>
+    <string name="table_column_name_desc">描述</string>
+    <string name="table_column_name_updated">更新时间</string>
+    <string name="edit_rule_plural">复数类型数据的编辑规则说明</string>
+    <string name="edit_rule_plural_detail">
+        复数的编辑规则与 YAML 格式中的键值对一致。\n
+        即，复数的键和值以 "- key: value" 的形式输入，应用会自动识别，移除数据格式并将剩余的部分作为复数的元素回写到文件中。\n
+        比如，下面就是一个复数的例子：\n
+        - one: %d apple
+        - other: %d apples
+    </string>
+    <string name="edit_rule_array">数组类型数据的编辑规则说明</string>
+    <string name="edit_rule_array_detail">
+        数组的编辑规则与 YAML 格式中的数组一致。\n
+        即，数组的每个元素以 "- " 的形式开头，应用会自动识别，移除 "- " 并将剩余的部分作为数组的元素回写到文件中。\n
+        比如，下面就是一个数组的例子：\n
+        - 数组元素 1
+        - 数组元素 2
+        - 数组元素 3
+    </string>
+    <string name="translate_translator_type_miss">未指定翻译器的类型</string>
+    <string name="translate_language_not_found">暂时不支持这种类型的语言</string>
+    <string name="translate_language_unclear">翻译的目标语言可能是默认语言类型，无法确定其真实的语言</string>
+    <string name="translate_language_not_support">翻译器不支持目标语言</string>
+    <string name="translate_standard_miss">本自动翻译默认使用第一个词条的含义，请确保该词条含义不为空！</string>
+    <string name="translate_auto">自动翻译</string>
+    <string name="translate_auto_translating">正在翻译中，请等待当前任务结束之后再尝试...</string>
+    <string name="translate_type_set_message">到设置中指定使用的翻译器的类型？</string>
+    <string name="translate_translator_info_miss">尚未配置翻译器信息</string>
+    <string name="translate_translator_info_set_message">到设置中配置翻译器的信息？</string>
+    <string name="translate_state_translating">翻译中</string>
+    <string name="translate_state_completed">翻译完成</string>
+    <string name="translate_state_error">翻译出错</string>
+    <string name="translate_state">翻译状态</string>
+    <string name="translate_state_state">状态</string>
+    <string name="translate_state_error_name">错误</string>
+    <string name="translate_state_translated_count">已翻译</string>
+    <string name="translate_state_error_count">出错</string>
+    <string name="translate_state_skipped_count">跳过</string>
+    <string name="translate_state_request_count">接口请求</string>
+    <string name="translate_state_count">总计</string>
+    <string name="translate_state_abnormal">状态异常</string>
+    <string name="translate_state_to_translate_count">待翻译词条数量</string>
+    <string name="translate_state_evaluated_time">预计翻译耗时</string>
+    <string name="translate_state_source_lang">翻译的基准语言</string>
+    <string name="translate_state_source_word">使用单词自带语言</string>
+    <string name="translate_translator">翻译器</string>
+    <string name="translate_translator_not_configured">无法使用该翻译器：尚未配置该翻译器信息。可以到设置中进行配置。</string>
+    <string name="project_project">项目</string>
+    <string name="project_empty_title">你需要先创建一个项目</string>
+    <string name="project_create">创建项目</string>
+    <string name="project_create_title">创建新项目</string>
+    <string name="project_manage">管理项目</string>
+    <string name="project_edit">编辑项目</string>
+    <string name="project_name">项目的名称</string>
+    <string name="project_name_empty_tip">项目的名称不能为空</string>
+    <string name="project_desc">项目的描述</string>
+    <string name="project_desc_desc">用来给 AI 提供背景信息，以使翻译更加准确。简要填写项目的用途和功能。</string>
+    <string name="project_list_tip">总计 %1$d 个项目，下滑可以展示更多</string>
+    <string name="project_delete_title">删除项目</string>
+    <string name="project_delete_message">确定删除项目 "%1$s"？\n删除之后无法恢复</string>
+    <string name="project_create_success">项目 "%1$s" 创建成功！</string>
+    <string name="project_delete_success">项目 "%1$s" 删除成功！</string>
+    <string name="project_update_success">项目 "%1$s" 更新成功！</string>
+    <string name="project_create_failed">项目 "%1$s" 创建失败：%2$s</string>
+    <string name="folder_switch">切换多语言目录</string>
+    <string name="folder_choose">选择多语言目录</string>
+    <string name="folder_add">新增多语言目录</string>
+    <string name="folder_empty_title">尚未为当前平台添加多语言目录</string>
+    <string name="folder_empty_subtitle">选择你的项目的根目录，应用会自动扫描多语言文件所在目录</string>
+    <string name="folder_scan_result">经扫描，我们发现了如下多语言目录:</string>
+    <string name="folder_manage">管理多语言目录</string>
+    <string name="folder_not_found">未扫描到任何多语言目录</string>
+    <string name="folder_current">当前目录</string>
+    <string name="word_add_title">添加词条</string>
+    <string name="word_add_hint">请输入要添加的词条的名称</string>
+    <string name="word_add_name_empty_tip">词条的名称不能为空</string>
+    <string name="word_delete">删除词条</string>
+    <string name="word_delete_title">删除词条</string>
+    <string name="word_delete_message">确定删除词条 "%1$s"？\n删除之后无法恢复</string>
+    <string name="word_delete_success">词条 "%1$s" 删除成功！</string>
+    <string name="word_delete_failed">删除词条 "%1$s" 失败：%2$s</string>
+    <string name="word_update_success">词条 "%1$s" 更新成功！</string>
+    <string name="word_update_failed">词条更新失败</string>
+    <string name="word_update_failed_with">更新词条 "%1$s" 失败：%2$s</string>
+    <string name="word_plural_name">复数</string>
+    <string name="word_array_name">数组</string>
+    <string name="word_desc">描述</string>
+    <string name="word_save_path">存储位置</string>
+    <string name="word_save_upper_first_case">首字母大写</string>
+    <string name="word_search">搜索关键词</string>
+    <string name="word_search_hint">要搜索的关键词 &#8230;</string>
+    <string name="word_search_empty_tip">请输入关键字。</string>
+    <string name="word_filter_lang">选择要显示的语言</string>
+    <string name="word_filter_lang_select_all">全选</string>
+    <string name="word_filter_lang_unselect_all">取消全选</string>
+    <string name="ai_not_configured">未配置 AI 信息</string>
+    <string name="ai_translate_result_empty">翻译结果为空</string>
+    <string name="ai_model">模型</string>
+    <string name="ai_key">密钥</string>
+    <string name="ai_max_tokens">请求到最大 Token，Anthropic 接口会用到</string>
+    <string name="ai_clear_title">确定清空 AI 的配置信息？</string>
+    <string name="ai_clear_message">将会从本地删除所有 AI 服务器相关的配置</string>
+    <string name="ai_cleared">AI 信息清空成功！</string>
+    <string name="ai_open_ai_rule_tip">自定义 AI 必须符合 OpenAI 的 API 规范。点击了解更多！</string>
+    <string name="ai_open_ai_rule">OpenAI 的接口规范</string>
+    <string name="ai_prompt_hint">提示：%1$s、%2$s、%3$s 和 %4$s 是占位符，分别表示应用信息、单词的解释、翻译的目标语言和被翻译的单词。自定义提示词的时候注意保留这些占位符。</string>
+    <string name="ai_prompt">请翻译软件的多语言词条。\n软件功能：%1$s。\n词条描述：%2$s。\n请将单词 "%3$s" 翻译为 "%4$s"。\n要求：不要改动词条的格式、控制符号和特殊符号等，并且直接返回翻译的结果。</string>
+    <string name="set_general">通用</string>
+    <string name="set_ai_server_message">设置 AI 服务器</string>
+    <string name="set_i18n">I18n</string>
+    <string name="set_i18n_improve_title">启用翻译器优化</string>
+    <string name="set_i18n_improve_message">如果启用，应用程序将自动优化翻译结果，例如转换某些无效的转义字符。</string>
+    <string name="set_i18n_xml_tab_title">XML 文件写入时缩进空格数</string>
+    <string name="set_i18n_xml_tab_message">Android/Compose Multiplatform 项目的 XML 文件写入时每个缩进空格数</string>
+    <string name="set_i18n_xml_tab_2">2 个空格</string>
+    <string name="set_i18n_xml_tab_4">4 个空格</string>
+    <string name="set_i18n_delay_title">翻译延时</string>
+    <string name="set_i18n_delay_message">为词条翻译间隔增加延时，防止 API 请求过于频繁</string>
+    <string name="set_i18n_delay_input_title">翻译延时</string>
+    <string name="set_i18n_delay_input_message">输入延时的毫秒数</string>
+    <string name="set_i18n_delay_input_illegal">请输入合法的数值</string>
+    <string name="set_i18n_prompt_title">AI 翻译的提示词</string>
+    <string name="set_i18n_prompt_message">使用 AI 翻译时的提示词</string>
+    <string name="set_i18n_prompt_input_hint">请在此输入提示词</string>
+    <string name="set_i18n_api_title">翻译 API</string>
+    <string name="set_i18n_api_message">设置第三方翻译 API 的信息</string>
+    <string name="set_i18n_api_hint">仅填写自己要使用的第三方 API 信息即可</string>
+    <string name="set_i18n_translator_type_title">翻译器</string>
+    <string name="set_i18n_translator_type_message">设置自动翻译过程中使用的翻译器</string>
+    <string name="set_i18n_translator_not_set">暂未设置</string>
+    <string name="set_i18n_translator_type_set_succeed">翻译器类型设置成功，你可以使用它进行翻译了！</string>
+    <string name="set_i18n_translator_not_configured">设置成功，但是完善了 API 信息之后才能使用哦！</string>
+    <string name="set_app_theme">应用主题</string>
+    <string name="set_app_theme_system">跟随系统</string>
+    <string name="set_app_theme_light">浅色主题</string>
+    <string name="set_app_theme_dark">黑暗主题</string>
+    <string name="set_app_language">应用语言</string>
+    <string name="set_app_language_system">跟随系统</string>
+    <string name="set_app_language_tip">该修改需要重启之后才能生效哦！</string>
+    <string name="doc_android">Android 平台的说明</string>
+    <string name="doc_android_detail">
+        1. Android 只加载 res/*-values 目录下的 strings.xml 文件；
+        2. 将词条回写到原文件的时候会删除掉其中的注释信息；
+        3. 建议每次修改词条或者翻译之前建议先用 Git 备份。
+    </string>
+    <string name="premium_free_name">免费</string>
+    <string name="premium_premium_name">高级版</string>
+    <string name="premium_7_free_trial_name">7 天免费试用</string>
+    <string name="premium_professional_name">专业版</string>
+    <string name="premium_payway_none">无</string>
+    <string name="premium_payway_wechat">微信</string>
+    <string name="premium_payway_alipay">支付宝</string>
+    <string name="premium_payway_tip_title">作为一名个人开发者，我无法访问微信或支付宝的API。因此，要使用它们，您需要按照以下步骤操作：</string>
+    <string name="premium_payway_tip">1. 扫描二维码并转账。\n2. 然后在下方提交您的付款流水号。\n3. 等待开发者处理付款。（可能需要一些时间）</string>
+    <string name="premium_commit">提交序列号</string>
+    <string name="premium_commit_tip">订单号样本:\n支付宝: 2025102722001470881417555884\n微信: 10001089012025100301592913109537</string>
+    <string name="premium_commited">订单号已提交！开发者可能会花费一些时间处理它，请耐心等待～</string>
+    <string name="premium_commit_failed">订单号提交失败:</string>
+    <string name="premium_commit_title">输入订单序列号</string>
+    <string name="premium_serial_no">序列号</string>
+    <string name="premium_serial_check">请检查输入的订单号！</string>
+    <string name="premium_pay_status_commited">已提交</string>
+    <string name="premium_pay_status_checked">已检查</string>
+    <string name="premium_pay_status_check_failed">检查失败</string>
+    <string name="premium_pay_status_succeed">完成</string>
+    <string name="premium_pay_status_failed">失败</string>
+    <string name="premium_payway_choose">选择支付方式</string>
+    <string name="premium_payway_choose_tip">请选择一种支付方式：微信支付或支付宝！</string>
+    <string name="premium_unlocked">已解锁</string>
+    <string name="premium_join">立即加入</string>
+    <string name="premium_popular">最热门</string>
+    <string name="premium_price">价格</string>
+    <string name="premium_no_price">完全免费</string>
+    <string name="premium_daily_cost">使用 5 年，每天仅需 %1$s。</string>
+    <string name="premium_privilege_title">您将享受的权限：</string>
+    <string name="premium_login_first">请先登录</string>
+    <string name="premium_login_first_detail">该账户仅用于绑定会员权益，因此您可以在任何平台上登录以享受这些权益！</string>
+    <string name="premium_choose_plan">选择您的套餐</string>
+    <string name="premium_choose_plan_tip">您的付款是对我们工作最大的支持和鼓励。</string>
+    <string name="premium_reviews">用户评价</string>
+    <string name="premium_reviews_sub">我们的应用获得了用户的广泛好评。</string>
+    <string name="premium_redeem_code">提交兑换码</string>
+    <string name="premium_redeem_code_hint">兑换码</string>
+    <string name="premium_privilege_project_count">可创建项目的最大数量：</string>
+    <string name="premium_privilege_project_count_tip">免费版本只能创建1个项目，升级到专业版即可创建无限数量的项目！</string>
+    <string name="premium_privilege_path_count">可创建多语言路径的最大数量：</string>
+    <string name="premium_privilege_path_count_tip">免费版本只能创建 1 条多语言路径，升级到专业版以创建无限条路径！</string>
+    <string name="premium_privilege_translator">允许使用翻译器</string>
+    <string name="premium_privilege_translator_unable">无法使用翻译器</string>
+    <string name="premium_require_title">需解锁高级功能</string>
+    <string name="premium_require_message">您需要成为高级会员才能解锁此功能。</string>
+    <string name="premium_require_button">成为尊贵会员</string>
+    <string name="info_slogan">一个方便的开发工具，用于管理 i18n 资源。</string>
+    <string name="info_new_version_found">新版本：%1$s</string>
+    <string name="info_upgrade_now">立即升级</string>
+    <string name="info_ignore_version">忽略此版本。</string>
+    <string name="info_contact_us">联系我们</string>
+    <string name="info_contact_us_sub">如果您对我们的账户和会员有任何疑问，请随时与我们联系。</string>
+    <string name="info_developer_accounts">关注开发者</string>
+    <string name="info_recommend_apps">我们的其他应用</string>
+    <string name="feedback_title">反馈</string>
+    <string name="feedback_subtitle">帮助我们改进应用程序！</string>
+    <string name="feedback_type">反馈类型</string>
+    <string name="feedback_type_bug">Bug</string>
+    <string name="feedback_type_improve">改进</string>
+    <string name="feedback_content_hint">告诉我们如何改进</string>
+    <string name="feedback_content_empty">请输入反馈内容。</string>
+    <string name="feedback_contact_hint">我们如何与您联系（可选）</string>
+    <string name="feedback_contact_tip">您也可以通过我们提供的联系方式与我们联系。</string>
+    <string name="feedback_succeed_message">谢谢！
+您的反馈将帮助我们改进应用程序。</string>
+    <string name="user_sign_up_title">注册</string>
+    <string name="user_change_password_title">更改密码</string>
+    <string name="user_sign_up">注册</string>
+    <string name="user_login">登录</string>
+    <string name="user_login_ing">正在登录 &#8230;</string>
+    <string name="user_logged_in">登录成功！</string>
+    <string name="user_log_failed">登录失败：</string>
+    <string name="user_logout">退出登录</string>
+    <string name="user_logout_title">确定要登出吗？</string>
+    <string name="user_logout_message">退出登录后，您将无法继续享受会员权益~</string>
+    <string name="user_logged_out">登出成功！</string>
+    <string name="user_not_logged">请先登录</string>
+    <string name="user_not_logged_detail">请登录以恢复购买。</string>
+    <string name="user_logged_unlocked">已登录，会员已解锁。</string>
+    <string name="user_logged_locked">已登录</string>
+    <string name="user_info">用户信息</string>
+    <string name="user_info_sub">该账户仅用于绑定会员权益！</string>
+    <string name="user_info_payments">订单</string>
+    <string name="user_info_payment_no">No</string>
+    <string name="user_info_payment_serial">订单号</string>
+    <string name="user_info_payment_way">支付方法</string>
+    <string name="user_info_payment_cost">花费</string>
+    <string name="user_info_payment_status">状态</string>
+    <string name="user_info_no">No</string>
+    <string name="user_info_account">帐户</string>
+    <string name="user_info_created">创建时间</string>
+    <string name="user_info_expire">登录时间过期</string>
+    <string name="user_sign_in_up">注册/登录</string>
+    <string name="user_sing_up_succeed">注册成功！现在返回登录！</string>
+    <string name="user_sing_up_failed">注册失败：</string>
+    <string name="user_account_or_email">账户（邮箱）</string>
+    <string name="user_account_tip">该账户仅用于绑定会员权益！如果您有任何账户相关问题，请直接联系我们！</string>
+    <string name="user_password">密码</string>
+    <string name="user_password_again">再次输入密码</string>
+    <string name="user_password_forget">忘记密码</string>
+    <string name="user_password_changed">密码更新成功！现在返回登录？</string>
+    <string name="user_password_change_failed">更新密码失败：</string>
+    <string name="user_verification_code">验证码</string>
+    <string name="user_verification_code_sent">验证码发送成功，有效期为 %1$d 分钟！</string>
+    <string name="user_verification_code_failed">发送验证码失败：</string>
+    <string name="user_account_required">请输入账号！</string>
+    <string name="user_account_email">账户应为有效的电子邮件！</string>
+    <string name="user_password_required">请输入密码！</string>
+    <string name="user_password_again_required">请重新输入密码！</string>
+    <string name="user_password_simple">密码长度不得少于 8！</string>
+    <string name="user_password_different">两次输入的密码应该相同！</string>
+    <string name="user_code_required">请输入验证码！</string>
+    <string name="user_code_after">验证码请求过于频繁，请 %1$d 秒后重试。</string>
+    <string name="user_session_expired">会话已过期</string>
+    <string name="user_session_expired_tip">您的登录会话已过期。您需要重新登录。</string>
+    <string name="doc_title">用户文档</string>
+    <string name="doc_ios">iOS 平台的说明</string>
+    <string name="doc_ios_detail">
+        1. iOS 支持 .strings 和 .xcstrings 两种类型的文件；
+        2. 不支持一个目录下不同多语言文件存在相同 key 的情况；
+        3. 将词条回写到原文件的时候会删除掉其中的注释信息；
+        4. 建议每次修改词条或者翻译之前建议先用 Git 备份。
+    </string>
+    <string name="doc_compose">Compose Multiplatform 平台的说明</string>
+    <string name="doc_compose_detail">
+        1. Compose Multiplatform 只加载 composeResources/*-values 目录下的 strings.xml 文件；
+        2. 将词条回写到原文件的时候会删除掉其中的注释信息；
+        3. 建议每次修改词条或者翻译之前建议先用 Git 备份。
+    </string>
+    <string name="doc_flutter">Flutter 平台的说明</string>
+    <string name="doc_flutter_detail">
+        1. Flutter 目前只支持 .arb 格式的文件；
+        2. 建议每次修改词条或者翻译之前建议先用 Git 备份。
+    </string>
+    <string name="doc_add">如何新增语言或者词条</string>
+    <string name="doc_add_detail">
+        目前不支持在应用内添加语言或者词条，如果需要新增语言或者词条，可以先在项目目录下手动添加，然后在应用中刷新列表重新加载即可。
+    </string>
+    <string name="doc_properties">Java 平台的说明</string>
+    <string name="doc_properties_detail">        1. 可以在单词列表右下角选择 properties 文件读取的编码格式；
+        2. 将词条回写到原文件的时候会删除掉其中的注释信息；
+        3. 建议每次修改词条或者翻译之前建议先用 Git 备份。</string>
+</resources>

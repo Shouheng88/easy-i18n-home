@@ -1,0 +1,25 @@
+CREATE TABLE I18nProject (
+  id INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL,
+  name TEXT NOT NULL,
+  logo TEXT,
+  description TEXT,
+  createdTime INTEGER NOT NULL
+);
+
+getAll:
+SELECT * FROM I18nProject;
+
+getById:
+SELECT * FROM I18nProject WHERE id = ?;
+
+getByCreatedTime:
+SELECT * FROM I18nProject WHERE createdTime = ?;
+
+update:
+UPDATE I18nProject SET name = :name, logo = :logo, description = :description WHERE id = ?;
+
+insert:
+INSERT INTO I18nProject(name, logo, description, createdTime) VALUES (?, ?, ?, ?);
+
+delete:
+DELETE FROM I18nProject WHERE id = ?;

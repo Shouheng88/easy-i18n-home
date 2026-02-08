@@ -1,0 +1,31 @@
+CREATE TABLE I18nPath (
+  id INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL,
+  projectId INTEGER NOT NULL,
+  platform INTEGER NOT NULL,
+  path TEXT NOT NULL,
+  resourceType INTEGER NOT NULL,
+  encoding TEXT,
+  sourceLanguage TEXT,
+  createdTime INTEGER NOT NULL
+);
+
+getAll:
+SELECT * FROM I18nPath;
+
+getOf:
+SELECT * FROM I18nPath WHERE projectId = ? AND platform = ?;
+
+getById:
+SELECT * FROM I18nPath WHERE id = ?;
+
+insert:
+INSERT INTO I18nPath(projectId, platform, path, resourceType, sourceLanguage, createdTime) VALUES (?, ?, ?, ?, ?, ?);
+
+updateSourceLanguage:
+UPDATE I18nPath SET sourceLanguage = ? WHERE id = ?;
+
+updateEncoding:
+UPDATE  I18nPath SET encoding = ? WHERE id = ?;
+
+delete:
+DELETE FROM I18nPath WHERE id = ?;

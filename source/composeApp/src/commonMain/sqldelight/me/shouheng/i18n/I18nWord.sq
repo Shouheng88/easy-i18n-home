@@ -1,0 +1,29 @@
+CREATE TABLE I18nWord (
+  id INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL,
+  name TEXT NOT NULL,
+  path TEXT NOT NULL,
+  description TEXT,
+  updatedTime INTEGER,
+  createdTime INTEGER NOT NULL
+);
+
+getAll:
+SELECT * FROM I18nWord;
+
+getOf:
+SELECT * FROM I18nWord WHERE path = ?;
+
+getBy:
+SELECT * FROM I18nWord WHERE path = ? AND name = ?;
+
+insert:
+INSERT INTO I18nWord(name, path, description, updatedTime, createdTime) VALUES (?, ?, ?, ?, ?);
+
+updateDescription:
+UPDATE I18nWord SET description = :description, updatedTime = :updatedTime WHERE id = ?;
+
+markUpdatedTime:
+UPDATE I18nWord SET updatedTime = :updatedTime WHERE id = ?;
+
+delete:
+DELETE FROM I18nWord WHERE id = ?;

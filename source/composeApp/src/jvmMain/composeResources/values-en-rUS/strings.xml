@@ -1,0 +1,382 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Easy I18n</string>
+    <string name="language">en</string>
+    <string name="text_seconds">second(s)</string>
+    <string name="text_minutes">minute(s)</string>
+    <string name="text_hours">hour(s)</string>
+    <string name="text_days">days(s)</string>
+    <string name="text_to_set">To Set</string>
+    <string name="text_cancel">Cancel</string>
+    <string name="text_save">Save</string>
+    <string name="text_sure">Sure</string>
+    <string name="text_done">Done</string>
+    <string name="text_send">Send</string>
+    <string name="text_sending">Sending...</string>
+    <string name="text_succeed">Succeed</string>
+    <string name="text_failed">Failed</string>
+    <string name="text_copied">Copied</string>
+    <string name="text_back">Back</string>
+    <string name="text_tips">Tips</string>
+    <string name="text_update_succeed">Update successful!</string>
+    <string name="text_save_succeed">Saved successfully!</string>
+    <string name="text_save_failed_with">Failed to save: %1$s</string>
+    <string name="text_configured">Configured</string>
+    <string name="text_not_configured">Not configured</string>
+    <string name="text_add">Add</string>
+    <string name="text_begin">Begin</string>
+    <string name="text_got_it">Got It</string>
+    <string name="text_clear">Clear</string>
+    <string name="text_or">Or</string>
+    <string name="text_document">Doc</string>
+    <string name="text_loading">Loading...</string>
+    <string name="text_unlimited">unlimited</string>
+    <string name="tab_i18n_name">App I18n</string>
+    <string name="tab_setting_name">Settings</string>
+    <string name="tab_info_name">Info</string>
+    <string name="tab_premium_name">Premium Center</string>
+    <string name="set_ai_provider_open_ai">OpenAI</string>
+    <string name="set_ai_provider_qianwen">Qwen</string>
+    <string name="set_ai_provider_deepseek">DeepSeek</string>
+    <string name="set_ai_provider_anthropic">Anthropic</string>
+    <string name="set_ai_provider_zhipu">Zhipu</string>
+    <string name="set_ai_provider_grok">Grok</string>
+    <string name="set_ai_provider_gemini">Gemini</string>
+    <string name="set_ai_provider_custom">Custom</string>
+    <string name="translator_name_google">Google Translate (V2)</string>
+    <string name="translator_name_baidu">Baidu Translate</string>
+    <string name="translator_name_deepl">DeepL Translate</string>
+    <string name="translator_name_libre">Libre Translate</string>
+    <string name="translator_name_tencent">Tencent Translate</string>
+    <string name="translator_name_ai">AI Translate</string>
+    <string name="language_default">Default</string>
+    <string name="language_unknown">Unknown</string>
+    <string name="language_zh">Chinese</string>
+    <string name="language_cht">Traditional Chinese</string>
+    <string name="language_jp">Japanese</string>
+    <string name="language_yue">Cantonese</string>
+    <string name="language_en">English</string>
+    <string name="language_ko">Korean</string>
+    <string name="language_th">Thai</string>
+    <string name="language_pt">Portuguese</string>
+    <string name="language_pt_br">Portuguese (Brazilian)</string>
+    <string name="language_el">Greek</string>
+    <string name="language_bg">Bulgarian</string>
+    <string name="language_fi">Finnish</string>
+    <string name="language_sl">Slovenian</string>
+    <string name="language_fr">French</string>
+    <string name="language_fr_fr">French (France)</string>
+    <string name="language_fr_ca">French (Canada)</string>
+    <string name="language_ar">Arabic</string>
+    <string name="language_de">German</string>
+    <string name="language_nl">Dutch</string>
+    <string name="language_et">Estonian</string>
+    <string name="language_cs">Czech</string>
+    <string name="language_sv">Swedish</string>
+    <string name="language_vi">Vietnamese</string>
+    <string name="language_es">Spanish</string>
+    <string name="language_ru">Russian</string>
+    <string name="language_it">Italian</string>
+    <string name="language_pl">Polish</string>
+    <string name="language_da">Danish</string>
+    <string name="language_ro">Romanian</string>
+    <string name="language_hu">Hungarian</string>
+    <string name="language_no">Norwegian</string>
+    <string name="language_tr">Turkish</string>
+    <string name="language_hi">Hindi</string>
+    <string name="language_in">Indonesian</string>
+    <string name="language_uk">Ukrainian</string>
+    <string name="language_bn">Bengalese</string>
+    <string name="table_column_name_no">No</string>
+    <string name="table_column_name_word">Words</string>
+    <string name="table_column_name_rate">Rate</string>
+    <string name="table_column_name_desc">Comment</string>
+    <string name="table_column_name_updated">Updated</string>
+    <string name="edit_rule_plural">Editing Rules For Plural Text</string>
+    <string name="edit_rule_plural_detail">
+        The editing rules for complex numbers are the same as key-value pairs in the YAML format.\n
+        That is, the key and value of the complex number are entered in the form of "- key: value". The application will automatically recognize it, remove the data format, and write the remaining part back to the file as the plural element.\n
+        For example, the following is an example of a complex number:\n
+        - one: %d apple
+        - other: %d apples
+    </string>
+    <string name="edit_rule_array">Editing Rules For Array Text</string>
+    <string name="edit_rule_array_detail">
+        Array editing rules are the same as those for arrays in YAML format.\n
+        That is, if each element in an array begins with a "-", the application will automatically recognize it, remove the "-", and write the remaining elements back to the file as array elements.\n
+        For example, the following is an array example:\n
+        - Array element 1
+        - Array element 2
+        - Array element 3
+    </string>
+    <string name="translate_translator_type_miss">Translator is not specified</string>
+    <string name="translate_language_not_found">This language is not supported now.</string>
+    <string name="translate_language_unclear">The target language of the translation may be the default language, and its actual language cannot be determined</string>
+    <string name="translate_language_not_support">The target language is not supported by the translator.</string>
+    <string name="translate_standard_miss">This translation uses the first meaning by default. Please make sure the first meaning is not empty!</string>
+    <string name="translate_auto">Auto Translate</string>
+    <string name="translate_auto_translating">Translating, please wait until the current task is completed before trying again...</string>
+    <string name="translate_type_set_message">Translator is not specified.\nTo specify translator in the settings?</string>
+    <string name="translate_translator_info_miss">Translator information has not been configured</string>
+    <string name="translate_translator_info_set_message">Translator information has not been configured.\nTo configure the translator in settings?</string>
+    <string name="translate_state_translating">Translating</string>
+    <string name="translate_state_completed">Done</string>
+    <string name="translate_state_error">Error</string>
+    <string name="translate_state">Translation Status</string>
+    <string name="translate_state_state">State</string>
+    <string name="translate_state_error_name">Error</string>
+    <string name="translate_state_translated_count">Translated</string>
+    <string name="translate_state_error_count">Error Count</string>
+    <string name="translate_state_skipped_count">Skipped Count</string>
+    <string name="translate_state_request_count">Request Count</string>
+    <string name="translate_state_count">Total</string>
+    <string name="translate_state_abnormal">Abnormal status</string>
+    <string name="translate_state_to_translate_count">Texts to Be Translated</string>
+    <string name="translate_state_evaluated_time">Estimated Time Cost</string>
+    <string name="translate_state_source_lang">Base language for translation</string>
+    <string name="translate_state_source_word">Use source language of each word (for xcstrings)</string>
+    <string name="translate_translator">Translator</string>
+    <string name="translate_translator_not_configured">Unable to use this translator: The translator information has not been configured. You can configure it in settings.</string>
+    <string name="project_project">Project</string>
+    <string name="project_empty_title">You need to create a project first.</string>
+    <string name="project_create">Create Project</string>
+    <string name="project_create_title">Create New Project</string>
+    <string name="project_manage">Manage Projects</string>
+    <string name="project_edit">Edit Project</string>
+    <string name="project_name">Project Name</string>
+    <string name="project_name_empty_tip">The project name cannot be empty.</string>
+    <string name="project_desc">Project Description</string>
+    <string name="project_desc_desc">This is used to provide background information to the AI to make the translation more accurate. Briefly describe the purpose and function of the project.</string>
+    <string name="project_list_tip">%1$d project(s) in total. Scroll down to see more.</string>
+    <string name="project_delete_title">Delete Project</string>
+    <string name="project_delete_message">Are you sure you want to delete the project "%1$s"?\nCannot be restored after deletion!</string>
+    <string name="project_create_success">Project "%1$s" created successfully!</string>
+    <string name="project_delete_success">Project "%1$s" deleted successfully!</string>
+    <string name="project_update_success">Project "%1$s" updated successfully!</string>
+    <string name="project_create_failed">Project "%1$s" failed to create: %2$s</string>
+    <string name="folder_switch">Switch Folder</string>
+    <string name="folder_choose">Choose Folder</string>
+    <string name="folder_add">Add Folder</string>
+    <string name="folder_empty_title">Multilingual directories have not yet been added for the current platform</string>
+    <string name="folder_empty_subtitle">Select the root directory of your project, and the application will automatically scan the directory where the multilingual files are located.</string>
+    <string name="folder_scan_result">After scanning, we found the following multilingual directories:</string>
+    <string name="folder_manage">Manage Folders</string>
+    <string name="folder_not_found">No multilingual directories were scanned</string>
+    <string name="folder_current">Current</string>
+    <string name="word_add_title">Add Text</string>
+    <string name="word_add_hint">Please enter the name of the text to be added</string>
+    <string name="word_add_name_empty_tip">The name of the text cannot be empty</string>
+    <string name="word_delete">Delete Text</string>
+    <string name="word_delete_title">Delete Text</string>
+    <string name="word_delete_message">Are you sure you want to delete the text "%1$s"?\nCannot be restored after deletion!</string>
+    <string name="word_delete_success">The text "%1$s" was deleted successfully!</string>
+    <string name="word_delete_failed">Failed to delete the text "%1$s": %2$s</string>
+    <string name="word_update_success">The text "%1$s" was updated successfully!</string>
+    <string name="word_update_failed">Text update failed</string>
+    <string name="word_update_failed_with">Failed to update text "%1$s": %2$s</string>
+    <string name="word_plural_name">Plural</string>
+    <string name="word_array_name">Array</string>
+    <string name="word_desc">Comment</string>
+    <string name="word_save_path">Storage</string>
+    <string name="word_save_upper_first_case">Capitalize the First Letter</string>
+    <string name="word_search">Search Keyword</string>
+    <string name="word_search_hint">The keyword to search...</string>
+    <string name="word_search_empty_tip">Please input the keyword.</string>
+    <string name="word_filter_lang">Choose Languages to Display</string>
+    <string name="word_filter_lang_select_all">Select All</string>
+    <string name="word_filter_lang_unselect_all">Unselect All</string>
+    <string name="ai_not_configured">AI information not configured</string>
+    <string name="ai_translate_result_empty">The translation result is empty</string>
+    <string name="ai_model">Model</string>
+    <string name="ai_key">Key</string>
+    <string name="ai_max_tokens">Request the maximum Token, which will be used by the Anthropic interface</string>
+    <string name="ai_clear_title">Are you sure you want to clear AI configuration information?</string>
+    <string name="ai_clear_message">All AI server related configurations will be deleted from the local</string>
+    <string name="ai_cleared">AI information cleared successfully!</string>
+    <string name="ai_open_ai_rule_tip">Custom AI must conform to OpenAI's API specification. Click here to learn more!</string>
+    <string name="ai_open_ai_rule">OpenAI's interface specification</string>
+    <string name="ai_prompt_hint">Tip: %1$s, %2$s, %3$s, and %4$s are placeholders, representing app information, word explanation, target language, and translated word, respectively. Be sure to retain these placeholders when customizing prompts.</string>
+    <string name="ai_prompt">Please translate a multilingual text from a program.\nProgram function: %1$s.\nText description: %2$s.\nTranslate the word "%3$s" into "%4$s". Keep the formatting, control symbols, special characters unchanged and return the translated text directly.</string>
+    <string name="set_general">General</string>
+    <string name="set_ai_server_message">Setting up the AI server</string>
+    <string name="set_i18n">I18n</string>
+    <string name="set_i18n_improve_title">Enable Translator Optimization</string>
+    <string name="set_i18n_improve_message">If enabled, the App will automatically optimize translation results, such as converting certain invalid escape characters.</string>
+    <string name="set_i18n_xml_tab_title">Number of Spaces to Indent When Writing XML Files</string>
+    <string name="set_i18n_xml_tab_message">The number of spaces per indent when writing XML files for Android/Compose Multiplatform projects</string>
+    <string name="set_i18n_xml_tab_2">2 spaces</string>
+    <string name="set_i18n_xml_tab_4">4 spaces</string>
+    <string name="set_i18n_delay_title">Translation Delay</string>
+    <string name="set_i18n_delay_message">Add a delay between translations to prevent API requests from being too frequent</string>
+    <string name="set_i18n_delay_input_title">Translation Delay</string>
+    <string name="set_i18n_delay_input_message">Enter the delay in milliseconds</string>
+    <string name="set_i18n_delay_input_illegal">Please enter a valid number</string>
+    <string name="set_i18n_prompt_title">AI Translation Prompt</string>
+    <string name="set_i18n_prompt_message">Prompt when using AI translation</string>
+    <string name="set_i18n_prompt_input_hint">Please enter the prompt here</string>
+    <string name="set_i18n_api_title">Translator API</string>
+    <string name="set_i18n_api_message">Set third-party translator API information</string>
+    <string name="set_i18n_api_hint">Just fill in the third-party API information you want to use</string>
+    <string name="set_i18n_translator_type_title">Translator</string>
+    <string name="set_i18n_translator_type_message">Set the translator used during automatic translation</string>
+    <string name="set_i18n_translator_not_set">Not Set Yet</string>
+    <string name="set_i18n_translator_type_set_succeed">The translator type has been set successfully, you can use it to translate!</string>
+    <string name="set_i18n_translator_not_configured">The setup was successful, but you can only use it after completing the API information!</string>
+    <string name="set_app_theme">App Theme</string>
+    <string name="set_app_theme_system">Follow System</string>
+    <string name="set_app_theme_light">Light Theme</string>
+    <string name="set_app_theme_dark">Dark Theme</string>
+    <string name="set_app_language">App Language</string>
+    <string name="set_app_language_system">Follow System</string>
+    <string name="set_app_language_tip">This change will take effect only after a restart.</string>
+    <string name="set_app_language_en_US" translatable="false">English</string>
+    <string name="set_app_language_zh_CN" translatable="false">中文简体</string>
+    <string name="premium_free_name">Free</string>
+    <string name="premium_premium_name">Premium</string>
+    <string name="premium_7_free_trial_name">7 Days Free Trial</string>
+    <string name="premium_professional_name">Pro</string>
+    <string name="premium_payway_none">None</string>
+    <string name="premium_payway_wechat">WeChat</string>
+    <string name="premium_payway_alipay">AliPay</string>
+    <string name="premium_payway_tip_title">As a personal developer, I can't access the API of WeChat or AliPay. So, to use them, you need to follow the steps:</string>
+    <string name="premium_payway_tip">1. Scan the QrCode and transfer the money.\n2. Then commit your payment serial below.\n3. Wait for the developer to handle the payment. (might take a little time)</string>
+    <string name="premium_commit">Commit Serial</string>
+    <string name="premium_commit_tip">Serial Samples:\nAliPay: 2025102722001470881417555884\nWeChat: 10001089012025100301592913109537</string>
+    <string name="premium_commited">Serial commited! It may take a time for the developer to handle it, please wait patiently.</string>
+    <string name="premium_commit_failed">Failed to commit serial:</string>
+    <string name="premium_commit_title">Enter The Order Serial Number</string>
+    <string name="premium_serial_no">Serial Number</string>
+    <string name="premium_serial_check">Please check the serial number entered!</string>
+    <string name="premium_pay_status_commited">Commited</string>
+    <string name="premium_pay_status_checked">Checked</string>
+    <string name="premium_pay_status_check_failed">Check Failed</string>
+    <string name="premium_pay_status_succeed">Done</string>
+    <string name="premium_pay_status_failed">Failed</string>
+    <string name="premium_payway_choose">Choose A Payment Method</string>
+    <string name="premium_payway_choose_tip">Please select a checkout method: WeChat Pay or Alipay!</string>
+    <string name="premium_unlocked">UNLOCKED</string>
+    <string name="premium_join">JOIN NOW</string>
+    <string name="premium_popular">Most Popular</string>
+    <string name="premium_price">Price</string>
+    <string name="premium_no_price">Totally free</string>
+    <string name="premium_daily_cost">Used for 5 years, only costs %1$s per day.</string>
+    <string name="premium_privilege_title">The privileges you will enjoy:</string>
+    <string name="premium_login_first">Please Log In First</string>
+    <string name="premium_login_first_detail">The account is only used to bind membership benefits, so you can log in to enjoy these benefits on any platform!</string>
+    <string name="premium_choose_plan">Choose Your Plan</string>
+    <string name="premium_choose_plan_tip">Your payment is the greatest support and encouragement for our work.</string>
+    <string name="premium_reviews">User Reviews</string>
+    <string name="premium_reviews_sub">Our app has received wide acclaim from users.</string>
+    <string name="premium_redeem_code">Commit Redeem Code</string>
+    <string name="premium_redeem_code_hint">Redeem Code</string>
+    <string name="premium_privilege_project_count">The maximum number of projects that can be created:</string>
+    <string name="premium_privilege_project_count_tip">The free version can only create 1 project, upgrade to the professional version to create unlimited projects!</string>
+    <string name="premium_privilege_path_count">The maximum number of folders that can be created:</string>
+    <string name="premium_privilege_path_count_tip">The free version can only create 1 path, upgrade to the professional version to create unlimited paths!</string>
+    <string name="premium_privilege_translator">Able to use translator</string>
+    <string name="premium_privilege_translator_unable">Unable to use translator</string>
+    <string name="premium_require_title">Premium Required</string>
+    <string name="premium_require_message">You need to become a premium member to unlock this feature.</string>
+    <string name="premium_require_button">BECOME A PREMIUM MEMBER</string>
+    <string name="info_slogan">An convenient development tool to manage i18n resources.</string>
+    <string name="info_new_version_found">New Version: %1$s</string>
+    <string name="info_upgrade_now">Upgrade Now</string>
+    <string name="info_ignore_version">Ignore this version.</string>
+    <string name="info_contact_us">Contact Us</string>
+    <string name="info_contact_us_sub">If you have any questions about our accounts and memberships, please feel free to contact us at any time.</string>
+    <string name="info_developer_accounts">Follow Developer</string>
+    <string name="info_recommend_apps">Our Other Apps</string>
+    <string name="feedback_title">Feedback</string>
+    <string name="feedback_subtitle">Help us improve the application!</string>
+    <string name="feedback_type">Feedback Type</string>
+    <string name="feedback_type_bug">Bug</string>
+    <string name="feedback_type_improve">Improvement</string>
+    <string name="feedback_content_hint">Tell us how can we improve</string>
+    <string name="feedback_content_empty">Please input the feedback content.</string>
+    <string name="feedback_contact_hint">How can we contact you (Optional)</string>
+    <string name="feedback_contact_tip">You can also contact us by ways we provided.</string>
+    <string name="feedback_succeed_message">Thanks!\nYour feedback will help us improve the APP.</string>
+    <string name="user_sign_up_title">Sign Up</string>
+    <string name="user_change_password_title">Change Password</string>
+    <string name="user_sign_up">Sign Up</string>
+    <string name="user_login">Login</string>
+    <string name="user_login_ing">Logging In...</string>
+    <string name="user_logged_in">Login successfully!</string>
+    <string name="user_log_failed">Failed to log in:</string>
+    <string name="user_logout">Logout</string>
+    <string name="user_logout_title">Sure to Logout?</string>
+    <string name="user_logout_message">You will not be able to continue enjoying membership benefits after logging out~</string>
+    <string name="user_logged_out">Logout successfully!</string>
+    <string name="user_not_logged">Login Required</string>
+    <string name="user_not_logged_detail">Please login to restore purchase.</string>
+    <string name="user_logged_unlocked">Logged In, Membership Unlocked.</string>
+    <string name="user_logged_locked">Logged In</string>
+    <string name="user_info">User Info</string>
+    <string name="user_info_sub">The account is only for binding membership benefits!</string>
+    <string name="user_info_payments">Payment(s)</string>
+    <string name="user_info_payment_no">No</string>
+    <string name="user_info_payment_serial">Serial</string>
+    <string name="user_info_payment_way">Method</string>
+    <string name="user_info_payment_cost">Cost</string>
+    <string name="user_info_payment_status">Status</string>
+    <string name="user_info_no">No</string>
+    <string name="user_info_account">Account</string>
+    <string name="user_info_created">Created</string>
+    <string name="user_info_expire">Session Expire In</string>
+    <string name="user_sign_in_up">Sign Up/Log In</string>
+    <string name="user_sing_up_succeed">Succeed to sign up! Now return to log in!</string>
+    <string name="user_sing_up_failed">Failed to sign up:</string>
+    <string name="user_account_or_email">Account(Email)</string>
+    <string name="user_account_tip">The account is only for binding membership benefits! If you have any account-related issues, please contact us directly!</string>
+    <string name="user_password">Password</string>
+    <string name="user_password_again">Re-enter Password</string>
+    <string name="user_password_forget">Forget Password</string>
+    <string name="user_password_changed">Password updated successfully! Now return to log in?</string>
+    <string name="user_password_change_failed">Failed to update password:</string>
+    <string name="user_verification_code">Verification Code</string>
+    <string name="user_verification_code_sent">Verification code sent successfully, valid for %1$d minutes!</string>
+    <string name="user_verification_code_failed">Failed to send verification code:</string>
+    <string name="user_account_required">Account is required!</string>
+    <string name="user_account_email">Account should be valid email!</string>
+    <string name="user_password_required">Password is required!</string>
+    <string name="user_password_again_required">Please retype password again!</string>
+    <string name="user_password_simple">Password length should be no less than 8!</string>
+    <string name="user_password_different">The two entered passwords should be the same!</string>
+    <string name="user_code_required">Verification code is required!</string>
+    <string name="user_code_after">Verification code requests are too frequent. Please try again after %1$d second(s).</string>
+    <string name="user_session_expired">Session Expired</string>
+    <string name="user_session_expired_tip">Your login session has expired. You need to log in again.</string>
+    <string name="doc_title">User Document</string>
+    <string name="doc_android">Description of the Android platform</string>
+    <string name="doc_android_detail">
+        1. Android only loads the strings.xml file under the res/*-values directory;
+        2. Comments in the file will be removed when writing the entries back to the original file;
+        3. It is recommended to back up with Git before each modification or translation of entries.
+    </string>
+    <string name="doc_ios">Description of the iOS platform</string>
+    <string name="doc_ios_detail">
+        1. iOS supports both .strings and .xcstrings file types;
+        2. Having different localization files with the same key in one directory is not supported;
+        3. Comment information will be removed when writing entries back to the original file;
+        4. It is recommended to back up using Git before each entry modification or translation.
+    </string>
+    <string name="doc_compose">Compose Multiplatform platform description</string>
+    <string name="doc_compose_detail">
+        1. Compose Multiplatform only loads the strings.xml files under the composeResources/*-values directories;
+        2. When writing back the entries to the original file, any comment information will be removed;
+        3. It is recommended to back up with Git before each modification or translation of entries.
+   </string>
+    <string name="doc_flutter">Flutter platform description</string>
+    <string name="doc_flutter_detail">
+        1. Flutter currently only supports files in .arb format;
+        2. It is recommended to back up with Git before modifying or translating entries.
+    </string>
+    <string name="doc_properties">Description of the Java platform</string>
+    <string name="doc_properties_detail">
+        1. You can select the encoding format for reading the properties file in the lower-right corner of the word list;
+        2. When writing the entries back to the original file, any comment information will be removed;
+        3. It is recommended to back up with Git before modifying or translating entries.
+    </string>
+    <string name="doc_add">How to add a new language or entry</string>
+    <string name="doc_add_detail">Currently, adding languages or entries within the application is not supported. If you need to add new languages or entries, you can manually add them under the project directory first, and then refresh the list in the application to reload.</string>
+</resources>
