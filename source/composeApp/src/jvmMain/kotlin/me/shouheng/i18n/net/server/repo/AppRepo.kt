@@ -53,6 +53,7 @@ object AppRepo : BaseRepo() {
         callBusiness {
             appServiceApi.getRecommendAppsV2Async(BusinessRequest.of(AppRecommendSo().apply {
                 this.app = Const.APP_CODE
+                this.channel = "web"
             }))
         }.onSuccess {
             it.data?.apply {

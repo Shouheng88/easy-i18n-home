@@ -11,4 +11,5 @@ import me.shouheng.i18n.net.server.model.base.SearchObject
  */
 class AppRecommendSo : SearchObject() {
     var app: String? = null
+    var channel: String? = null
 }
