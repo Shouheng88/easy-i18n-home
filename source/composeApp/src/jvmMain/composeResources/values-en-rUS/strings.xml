@@ -379,4 +379,12 @@
     </string>
     <string name="doc_add">How to add a new language or entry</string>
     <string name="doc_add_detail">Currently, adding languages or entries within the application is not supported. If you need to add new languages or entries, you can manually add them under the project directory first, and then refresh the list in the application to reload.</string>
+    <string name="doc_json">Any Json Description</string>
+    <string name="doc_json_detail">1. "Any JSON" refers to JSON files in any directory; the application reads each file in the specified directory as a language. This is consistent with the logic of multilingual maintenance in some frontend development processes.
+        2. Supports nested JSON structures. They will be read, and multi-level keys will be concatenated with "." for reading and display.</string>
+    <string name="platform_json">Any Json</string>
+    <string name="doc_yaml_detail">1. "Any YAML" refers to YAML files in any directory; the application reads each file in the specified directory as a language. This is consistent with the logic of multilingual maintenance in some frontend development processes.
+        2. Supports nested YAML structures. They will be read, and multi-level keys will be concatenated with "." for reading and display.</string>
+    <string name="doc_yaml">Any YAML Description</string>
+    <string name="platform_yaml">Any YAML</string>
 </resources>

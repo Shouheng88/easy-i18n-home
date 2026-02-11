@@ -129,6 +129,15 @@ object TranslatorManager {
                     .replace("&gt;", ">")
                     .replace("&lt;", "<")
                     .replace("&#8230;", "...")
+            I18nResourceType.JSON,
+            I18nResourceType.YAML ->
+                // XML/HTML 格式的转义字符转换为普通字符
+                text.replace("&quot;", "\"")
+                    .replace("&#39;", "\'")
+                    .replace("&amp;", "&")
+                    .replace("&gt;", ">")
+                    .replace("&lt;", "<")
+                    .replace("&#8230;", "...")
         }
     }
 

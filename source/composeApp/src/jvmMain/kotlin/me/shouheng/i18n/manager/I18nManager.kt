@@ -121,6 +121,18 @@ object I18nManager {
                 }
                 return isBuildDirectory
             }
+            I18nPlatform.JSON -> {
+                val isNodeModules = directory.name.equals("node_modules", ignoreCase = true)
+                val isBuildDirectory = directory.name.equals("dist", ignoreCase = true) ||
+                        directory.name.equals("build", ignoreCase = true)
+                return isNodeModules || isBuildDirectory
+            }
+            I18nPlatform.YAML -> {
+                val isNodeModules = directory.name.equals("node_modules", ignoreCase = true)
+                val isBuildDirectory = directory.name.equals("dist", ignoreCase = true) ||
+                        directory.name.equals("build", ignoreCase = true)
+                return isNodeModules || isBuildDirectory
+            }
         }
     }
 
@@ -157,6 +169,16 @@ object I18nManager {
             I18nPlatform.Flutter -> {
                 if (directory.list().any { it.name.endsWith(".arb", ignoreCase = true) }) {
                     types.add(I18nResourceType.FlutterArb)
+                }
+            }
+            I18nPlatform.JSON -> {
+                if (directory.list().any { it.name.endsWith(".json", ignoreCase = true) }) {
+                    types.add(I18nResourceType.JSON)
+                }
+            }
+            I18nPlatform.YAML -> {
+                if (directory.list().any { it.name.endsWith(".yaml", ignoreCase = true) || it.name.endsWith(".yml", ignoreCase = true) }) {
+                    types.add(I18nResourceType.YAML)
                 }
             }
         }

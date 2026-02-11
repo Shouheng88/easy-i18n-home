@@ -378,4 +378,12 @@
     <string name="doc_properties_detail">        1. 可以在单词列表右下角选择 properties 文件读取的编码格式；
         2. 将词条回写到原文件的时候会删除掉其中的注释信息；
         3. 建议每次修改词条或者翻译之前建议先用 Git 备份。</string>
+    <string name="platform_json">任何 Json</string>
+    <string name="platform_yaml">任何 YAML</string>
+    <string name="doc_json">任何 Json 的说明</string>
+    <string name="doc_json_detail">1. "任何 JSON" 指的是任意目录下的 Json 文件，应用会将指定目录下的每个文件作为一种语言进行读取。这与部分前端开发过程中的多语言维护的逻辑一致。
+        2. 支持嵌套类型的 Json 结构。它们将会被读取并将多层级的 key 以 "." 拼接的形式读取和展示。</string>
+    <string name="doc_yaml">任何 YAML 的说明</string>
+    <string name="doc_yaml_detail">1. "任何 YAML" 指的是任意目录下的 YAML 文件，应用会将指定目录下的每个文件作为一种语言进行读取。这与部分前端开发过程中的多语言维护的逻辑一致。
+        2. 支持嵌套类型结构。它们将会被读取并将多层级的 key 以 "." 拼接的形式读取和展示。</string>
 </resources>

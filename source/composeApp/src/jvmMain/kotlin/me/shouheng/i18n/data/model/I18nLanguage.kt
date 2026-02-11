@@ -28,6 +28,8 @@ enum class I18nLanguage(
     val properties: List<String>,
     /** FlutterArb */
     val flutterArb: List<String>,
+    /** Json */
+    val json: List<String>,
     /** 谷歌翻译使用的引擎 */
     val googleEngine: String,
     /** 百度翻译使用的引擎 */
@@ -46,10 +48,12 @@ enum class I18nLanguage(
         listOf(""),
         listOf(""),
         listOf(""),
+        listOf(""),
         "", "", "", "", ""
     ),
     UNKNOWN(
         Res.string.language_unknown,
+        listOf(),
         listOf(),
         listOf(),
         listOf(),
@@ -63,6 +67,7 @@ enum class I18nLanguage(
         listOf("ar"),
         listOf("ar", "ar_IL", "ar_EG"),
         listOf("ar", "ar_IL", "ar_EG"),
+        listOf("ar", "ar_IL", "ar-IL", "ar_EG", "ar-EG"),
         "ar", "ara", "ar", "ar", "AR"
     ),
     // 保加利亚语
@@ -72,6 +77,7 @@ enum class I18nLanguage(
         listOf("bg"),
         listOf("bg", "bg_BG"),
         listOf("bg", "bg_BG"),
+        listOf("bg", "bg_BG", "bg-BG"),
         "bg", "bul", "bg", "", "BG"
     ),
     // 孟加拉语
@@ -81,6 +87,7 @@ enum class I18nLanguage(
         listOf("bn"),
         listOf("bn", "bn_IN", "bn_BD"),
         listOf("bn", "bn_IN", "bn_BD"),
+        listOf("bn", "bn_IN", "bn-IN", "bn_BD", "bn-BD"),
         "bn", "ben", "bn", "", ""
     ),
     // 捷克语
@@ -90,6 +97,7 @@ enum class I18nLanguage(
         listOf("cs"),
         listOf("cs", "cs_CZ"),
         listOf("cs", "cs_CZ"),
+        listOf("cs", "cs_CZ", "cs-CZ"),
         "cs", "cs", "cs", "", "CS"
     ),
     // 丹麦语
@@ -99,6 +107,7 @@ enum class I18nLanguage(
         listOf("da"),
         listOf("da", "da_DK"),
         listOf("da", "da_DK"),
+        listOf("da", "da_DK", "da-DK"),
         "da", "dan", "da", "", "DA"
     ),
     // 德语
@@ -108,6 +117,7 @@ enum class I18nLanguage(
         listOf("de"),
         listOf("de", "de_DE", "de_LI", "de_AT", "de_CH"),
         listOf("de", "de_DE", "de_LI", "de_AT", "de_CH"),
+        listOf("de", "de_DE", "de-DE", "de_LI", "de-LI", "de_AT", "de-AT", "de_CH", "de-CH"),
         "de", "de", "de", "de", "DE"
     ),
     // 希腊语
@@ -117,6 +127,7 @@ enum class I18nLanguage(
         listOf("el"),
         listOf("el", "el_GR", "el_CY"),
         listOf("el", "el_GR", "el_CY"),
+        listOf("el", "el_GR", "el-GR", "el_CY", "el-CY"),
         "el", "el", "el", "", "EL"
     ),
     // 英语
@@ -126,6 +137,7 @@ enum class I18nLanguage(
         listOf("en", "en-AU", "en-IN", "en-GB"),
         listOf("en", "en_US", "en_AU", "en_CA", "en_IN", "en_IE", "en_NZ", "en_SG", "en_ZA", "en_GB"),
         listOf("en", "en_US", "en_AU", "en_CA", "en_IN", "en_IE", "en_NZ", "en_SG", "en_ZA", "en_GB"),
+        listOf("en", "en_US", "en-US", "en_AU", "en-AU", "en_CA", "en-CA", "en_IN", "en-IN", "en_IE", "en-IE", "en_NZ", "en-NZ", "en_SG", "en-SG", "en_ZA", "en-ZA", "en_GB", "en-GB"),
         "en", "en", "en", "en", "EN-US"
     ),
     // 西班牙语
@@ -135,6 +147,7 @@ enum class I18nLanguage(
         listOf("es"),
         listOf("es", "es_ES"),
         listOf("es", "es_ES"),
+        listOf("es", "es_ES", "es-ES"),
         "es", "spa", "es", "es", "ES"
     ),
     // 爱沙尼亚语
@@ -144,11 +157,13 @@ enum class I18nLanguage(
         listOf("et"),
         listOf("et", "et_EE"),
         listOf("et", "et_EE"),
+        listOf("et", "et_EE", "et-EE"),
         "et", "est", "et", "", "ET"
     ),
     // 法语
     FR(
         Res.string.language_fr,
+        listOf("fr"),
         listOf("fr"),
         listOf("fr"),
         listOf("fr"),
@@ -161,6 +176,7 @@ enum class I18nLanguage(
         listOf("fr-FR"),
         listOf("fr_FR"),
         listOf("fr_FR"),
+        listOf("fr_FR", "fr-FR"),
         "fr-FR", "fra", "fr", "fr", "FR"
     ),
     FR_CA(
@@ -169,6 +185,7 @@ enum class I18nLanguage(
         listOf("fr-CA"),
         listOf("fr_CA"),
         listOf("fr_CA"),
+        listOf("fr_CA", "fr-CA"),
         "fr-CA", "frn", "fr", "fr", "FR"
     ),
     // 芬兰语
@@ -178,11 +195,13 @@ enum class I18nLanguage(
         listOf("fi"),
         listOf("fi", "fi_FI"),
         listOf("fi", "fi_FI"),
+        listOf("fi", "fi_FI", "fi-FI"),
         "fi", "fin", "fi", "", "FI"
     ),
     // 印地语
     HI(
         Res.string.language_hi,
+        listOf("hi"),
         listOf("hi"),
         listOf("hi"),
         listOf("hi"),
@@ -196,12 +215,14 @@ enum class I18nLanguage(
         listOf("hu"),
         listOf("hu", "hu_HU"),
         listOf("hu", "hu_HU"),
+        listOf("hu", "hu_HU", "hu-HU"),
         "hu", "hu", "hu", "", "HU"
     ),
     // 印尼语
     IN(
         Res.string.language_in,
         listOf("in"),
+        listOf("id"),
         listOf("id"),
         listOf("id"),
         listOf("id"),
@@ -214,6 +235,7 @@ enum class I18nLanguage(
         listOf("it"),
         listOf("it", "it_IT"),
         listOf("it", "it_IT"),
+        listOf("it", "it_IT", "it-IT"),
         "it", "it", "it", "it", "IT"
     ),
     // 日语
@@ -223,6 +245,7 @@ enum class I18nLanguage(
         listOf("ja"),
         listOf("ja", "ja_JP"),
         listOf("ja", "ja_JP"),
+        listOf("ja", "ja_JP", "ja-JP"),
         "ja", "jp", "ja", "ja", "JA"
     ),
     // 韩语
@@ -232,6 +255,7 @@ enum class I18nLanguage(
         listOf("ko"),
         listOf("ko", "ko_KR"),
         listOf("ko", "ko_KR"),
+        listOf("ko", "ko_KR", "ko-KR"),
         "ko", "kor", "ko", "ko", "KO"
     ),
     // 荷兰语
@@ -241,6 +265,7 @@ enum class I18nLanguage(
         listOf("nl"),
         listOf("nl", "nl_NL", "nl_BE"),
         listOf("nl", "nl_NL", "nl_BE"),
+        listOf("nl", "nl_NL", "nl-NL", "nl_BE", "nl-BE"),
         "nl", "nl", "nl", "", "NL"
     ),
     // 挪威语
@@ -250,6 +275,7 @@ enum class I18nLanguage(
         listOf("nb"),
         listOf("nb", "nb_NO"),
         listOf("nb", "nb_NO"),
+        listOf("nb", "nb_NO", "nb-NO"),
         "no", "nor", "nb", "", "NB"
     ),
     // 波兰语
@@ -259,6 +285,7 @@ enum class I18nLanguage(
         listOf("pl"),
         listOf("pl", "pl_PL"),
         listOf("pl", "pl_PL"),
+        listOf("pl", "pl_PL", "pl-PL"),
         "pl", "pl", "pl", "", "PL"
     ),
     // 葡萄牙语
@@ -268,6 +295,7 @@ enum class I18nLanguage(
         listOf("pt-PT"),
         listOf("pt", "pt_PT"),
         listOf("pt", "pt_PT"),
+        listOf("pt", "pt_PT", "pt-PT"),
         "pt", "pt", "pt", "pt", "PT-PT"
     ),
     PT_BR(
@@ -276,6 +304,7 @@ enum class I18nLanguage(
         listOf("pt-BR"),
         listOf("pt_BR"),
         listOf("pt_BR"),
+        listOf("pt_BR", "pt-BR"),
         "pt-BR", "pot", "pt-BR", "pt", "PT-BR"
     ),
     // 罗马尼亚语
@@ -285,6 +314,7 @@ enum class I18nLanguage(
         listOf("ro"),
         listOf("ro", "ro_RO"),
         listOf("ro", "ro_RO"),
+        listOf("ro", "ro_RO", "ro-RO"),
         "ro", "rom", "ro", "", "RO"
     ),
     // 俄语
@@ -294,6 +324,7 @@ enum class I18nLanguage(
         listOf("ru"),
         listOf("ru", "ru_RU"),
         listOf("ru", "ru_RU"),
+        listOf("ru", "ru_RU", "ru-RU"),
         "ru", "ru", "ru", "ru", "RU"
     ),
     // 斯洛文尼亚语
@@ -303,6 +334,7 @@ enum class I18nLanguage(
         listOf("sl"),
         listOf("sl", "sl_SI"),
         listOf("sl", "sl_SI"),
+        listOf("sl", "sl_SI", "sl-SI"),
         "sl", "slo", "sl", "", "SL"
     ),
     // 瑞典语
@@ -312,6 +344,7 @@ enum class I18nLanguage(
         listOf("sv"),
         listOf("sv", "sv_SE"),
         listOf("sv", "sv_SE"),
+        listOf("sv", "sv_SE", "sv-SE"),
         "sv", "swe", "sv", "", "SV"
     ),
     // 土耳其语
@@ -321,6 +354,7 @@ enum class I18nLanguage(
         listOf("tr"),
         listOf("tr", "tr_TR"),
         listOf("tr", "tr_TR"),
+        listOf("tr", "tr_TR", "tr-TR"),
         "tr", "tr", "tr", "tr", "TR"
     ),
     // 泰语
@@ -330,11 +364,13 @@ enum class I18nLanguage(
         listOf("th"),
         listOf("th", "th_TH"),
         listOf("th", "th_TH"),
+        listOf("th", "th_TH", "th-TH"),
         "th", "th", "th", "th", "TH"
     ),
     // 乌克兰语
     UK(
         Res.string.language_uk,
+        listOf("uk"),
         listOf("uk"),
         listOf("uk"),
         listOf("uk"),
@@ -348,6 +384,7 @@ enum class I18nLanguage(
         listOf("vi"),
         listOf("vi", "vi_VN"),
         listOf("vi", "vi_VN"),
+        listOf("vi", "vi_VN", "vi-VN"),
         "vi", "vie", "vi", "vi", "VI"
     ),
     // 粤语
@@ -357,6 +394,7 @@ enum class I18nLanguage(
         listOf("zh-HK"),
         listOf("zh_HK", "zh_MO"),
         listOf("zh_HK", "zh_Hant_HK", "zh_MO",  "zh_Hant_MO"),
+        listOf("zh_HK", "zh-HK", "zh_Hant_HK", "zh-Hant-HK", "zh_MO", "zh-MO", "zh_Hant_MO", "zh-Hant-MO"),
         "yue", "yue", "zh-Hant", "zh-TW", "ZH-HANT"
     ),
     // 中文
@@ -366,6 +404,7 @@ enum class I18nLanguage(
         listOf("zh-Hans"),
         listOf("zh", "zh_CN", "zh_SG"),
         listOf("zh", "zh_Hans", "zh_Hans_CN", "zh_Hans_SG"),
+        listOf("zh", "zh_Hans", "zh-Hans", "zh_Hans_CN", "zh-Hans-CN", "zh_Hans_SG", "zh-Hans-SG"),
         "zh", "zh", "zh-Hans", "zh", "ZH-HANS"
     ),
     // 繁体中文
@@ -375,6 +414,7 @@ enum class I18nLanguage(
         listOf("zh-Hant"),
         listOf("zh_TW"),
         listOf("zh_Hant", "zh_Hant_TW"),
+        listOf("zh_Hant", "zh-Hant", "zh_Hant_TW", "zh-Hant-TW", "zh-TW"),
         "zh-TW", "cht", "zh-Hant", "zh-TW", "ZH-HANT"
     ),
     ;

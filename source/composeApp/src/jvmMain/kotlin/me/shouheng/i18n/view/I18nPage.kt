@@ -285,7 +285,7 @@ private fun PlatformListView(platform: I18nPlatform, vm: I18nViewModel) {
                                     .size(UIConst.ICON_BUTTON_SIZE.dp, UIConst.ICON_BUTTON_SIZE.dp)
                                     .padding(UIConst.ICON_BUTTON_PADDING.dp)
                             )
-                            Text(it.displayName, fontSize = 16.sp, modifier = Modifier)
+                            Text(it.displayName.get(), fontSize = 16.sp, modifier = Modifier)
                         }
                     },
                     onClick = {

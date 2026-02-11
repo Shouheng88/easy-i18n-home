@@ -11,6 +11,8 @@ enum class I18nResourceType(
     ComposeMultiplatformXML(3),
     JavaProperties(4, showEncoding = true),
     FlutterArb(5),
+    JSON(6),
+    YAML(7),
     ;
 
     fun simpleName(): String = when(this) {
@@ -20,6 +22,8 @@ enum class I18nResourceType(
         ComposeMultiplatformXML -> "xml"
         JavaProperties -> "properties"
         FlutterArb -> "arb"
+        JSON -> "json"
+        YAML -> "yaml"
     }
 
     companion object {

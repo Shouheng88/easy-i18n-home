@@ -67,6 +67,7 @@ kotlin {
             implementation("com.squareup.retrofit2:converter-gson:2.9.0")
             implementation("com.squareup.okhttp3:logging-interceptor:4.7.0")
             implementation("com.tencentcloudapi:tencentcloud-sdk-java-tmt:3.1.1338")
+            implementation("org.yaml:snakeyaml:2.2")
         }
 
         val jvmMain by getting {

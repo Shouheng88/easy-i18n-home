@@ -10,6 +10,8 @@ object LanguageManager {
     private val iosMap: Map<String, I18nLanguage>
     private val propertiesMap: Map<String, I18nLanguage>
     private val flutterMap: Map<String, I18nLanguage>
+    private val jsonMap: Map<String, I18nLanguage>
+    private val yamlMap: Map<String, I18nLanguage>
 
     init {
         // android
@@ -47,6 +49,24 @@ object LanguageManager {
             }
         }
         flutterMap = arb
+
+        // json
+        val json = mutableMapOf<String, I18nLanguage>()
+        I18nLanguage.entries.forEach { language ->
+            language.json.forEach { file ->
+                json[file] = language
+            }
+        }
+        jsonMap = json
+
+        // yaml
+        val yaml = mutableMapOf<String, I18nLanguage>()
+        I18nLanguage.entries.forEach { language ->
+            language.json.forEach { file ->
+                yaml[file] = language
+            }
+        }
+        yamlMap = yaml
     }
 
     /** 获取多语言 */
@@ -55,6 +75,7 @@ object LanguageManager {
         type: I18nResourceType? = null
     ): I18nLanguage? {
         val language = parseLanguageFrom(from, type)
+        val from = from.replace('_', '-') // 统一下划线和横划风
         return when(type) {
             I18nResourceType.AndroidXML, I18nResourceType.ComposeMultiplatformXML ->
                 androidMap[from] ?: androidMap[language]
@@ -64,6 +85,10 @@ object LanguageManager {
                 propertiesMap[from] ?: propertiesMap[language]
             I18nResourceType.FlutterArb ->
                 flutterMap[from] ?: flutterMap[language]
+            I18nResourceType.JSON ->
+                jsonMap[from] ?: jsonMap[language]
+            I18nResourceType.YAML ->
+                yamlMap[from] ?: yamlMap[language]
             null -> androidMap[from]
                 ?: iosMap[from]
                 ?: androidMap[language]
@@ -71,7 +96,11 @@ object LanguageManager {
                 ?: propertiesMap[from]
                 ?: propertiesMap[language]
                 ?: flutterMap[from]
-                ?: flutterMap[language] // 只要 Android 和 iOS 里面找一些，基本可以覆盖了
+                ?: flutterMap[language]
+                ?: jsonMap[from]
+                ?: jsonMap[language]
+                ?: yamlMap[from]
+                ?: yamlMap[language] // 只要 Android 和 iOS 里面找一些，基本可以覆盖了
         }
     }
 
@@ -96,6 +125,9 @@ object LanguageManager {
             }
             I18nResourceType.FlutterArb -> {
                 language.split('_').first()
+            }
+            I18nResourceType.JSON, I18nResourceType.YAML -> {
+                language.replace("-", "_").split('_').first()
             }
         }
     }

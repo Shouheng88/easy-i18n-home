@@ -20,6 +20,10 @@ import me.shouheng.i18n.i18n.ios.IOSXCStringWordDeleter
 import me.shouheng.i18n.i18n.ios.IOSXCStringWordUpdater
 import me.shouheng.i18n.i18n.java.PropertiesWordDeleter
 import me.shouheng.i18n.i18n.java.PropertiesWordUpdater
+import me.shouheng.i18n.i18n.json.JsonWordDeleter
+import me.shouheng.i18n.i18n.json.JsonWordUpdater
+import me.shouheng.i18n.i18n.yaml.YamlWordDeleter
+import me.shouheng.i18n.i18n.yaml.YamlWordUpdater
 import me.shouheng.i18n.utils.ITextGetter
 import me.shouheng.i18n.utils.LanguageNameGetter
 import org.jetbrains.compose.resources.DrawableResource
@@ -206,6 +210,28 @@ open class I18nWordModel internal constructor(
             origin: AbsTextResource,
         ): I18nWordModel = SingleFileI18WordModel(
             name, meanings, description, dto, path, order, origin, IOSXCStringWordDeleter, IOSXCStringWordUpdater
+        )
+
+        fun ofJson(
+            name: String,
+            meanings: List<Meaning>,
+            description: String? = null,
+            dto: I18nWord? = null,
+            path: I18nPath,
+            order: Int,
+        ): I18nWordModel = I18nWordModel(
+            name, meanings, description, dto, path, order, JsonWordDeleter(), JsonWordUpdater()
+        )
+
+        fun ofYaml(
+            name: String,
+            meanings: List<Meaning>,
+            description: String? = null,
+            dto: I18nWord? = null,
+            path: I18nPath,
+            order: Int,
+        ): I18nWordModel = I18nWordModel(
+            name, meanings, description, dto, path, order, YamlWordDeleter(), YamlWordUpdater()
         )
     }
 
