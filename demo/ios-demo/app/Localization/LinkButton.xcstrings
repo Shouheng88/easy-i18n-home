@@ -75,7 +75,8 @@
             "state" : "translated",
             "value" : ""
           }
-        }
+        },
+        "el" : {}
       }
     },
     "test_add" : {
@@ -140,7 +141,8 @@
           "stringUnit" : {
             "value" : ""
           }
-        }
+        },
+        "el" : {}
       }
     }
   },
