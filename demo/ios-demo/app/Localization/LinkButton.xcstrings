@@ -77,6 +77,71 @@
           }
         }
       }
+    },
+    "test_add" : {
+      "comment" : "",
+      "localizations" : {
+        "cs" : {
+          "stringUnit" : {
+            "value" : ""
+          }
+        },
+        "de" : {
+          "stringUnit" : {
+            "value" : ""
+          }
+        },
+        "en-GB" : {
+          "stringUnit" : {
+            "value" : ""
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "value" : ""
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "value" : ""
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "value" : ""
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "value" : ""
+          }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "value" : ""
+          }
+        },
+        "pt" : {
+          "stringUnit" : {
+            "value" : ""
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "value" : ""
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "value" : ""
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "value" : ""
+          }
+        }
+      }
     }
   },
   "version" : "1.0"

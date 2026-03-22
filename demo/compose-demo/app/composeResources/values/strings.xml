@@ -10,15 +10,16 @@
         This is <b>bold</b>, <i>italic</i>, and <u>underlined</u> text.
         Visit our <a href="https://example.com">website</a> for more info.
     </string>
-    <string name="price">Total: $%.2f</string> <!-- 保留2位小数 -->
-        <plurals name="item_count">
+    <string name="price">Total: $%.2f</string>
+    <plurals name="item_count">
         <item quantity="zero">You have no items.</item>
         <item quantity="one">You have 1 item.</item>
-        <item quantity="other">You have %d items.</item>
+        <item quantity="other">You have %d items.</item>     
     </plurals>
-       <string-array name="menu_items">
+    <string-array name="menu_items">
         <item>Search</item>
         <item>Settings</item>
         <item>Exit</item>
     </string-array>
+    <string name="test_add"></string>
 </resources>

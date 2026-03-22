@@ -21,4 +21,5 @@
         <item>Settings</item>
         <item>Exit</item>
     </string-array>
+    <string name="test_add"></string>
 </resources>
